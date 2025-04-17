@@ -1,45 +1,39 @@
-# credo UI Redesign in Flutter
-This project is a partial visual redesign of the credo app using Flutter, a popular cross-platform framework for building mobile applications. The goal of this project is to create a visually appealing and user-friendly interface for the credo app.
+# Credo - AI-Powered Business Ledger App (Frontend)
 
-### Project Structure
- #### The project structure is organized in the following way:
+Credo is a full-stack mobile app built to streamline business operations through intelligent invoice management, client relationship management, and query resolution. The frontend is developed using **Flutter**, and integrates seamlessly with the backend, powered by Django REST Framework.
 
-* lib: contains the main Dart code for the application
-* pages: contains the different screens for the application
-* widgets: contains the various common widgets used throughout the application
-* assets: contains any necessary assets used in the application 
+## Features
 
-### Installation
-#### Clone the repository using the following command:
-```bash    
-git clone https://github.com/iamkartiknayak/credo-android-redesign.git
-```
-#### Rename the project directory before running flutter commands
+- **AI-Powered Invoice Extraction**: Extracts invoice data from photos and audio using **Google Gemini API**.
+- **Multilingual Support**: Supports 8 languages for a global user base.
+- **Client-Supplier Relationship Management**: Users can manage and track client and supplier details.
+- **Chat-Based Query Resolution**: Facilitates smooth communication and issue resolution between users.
+- **PDF Invoice Generation**: Allows users to generate and share invoices in PDF format.
+- **Real-Time Sync**: Syncs with the Django backend for seamless data handling.
+  
+## Tech Stack
+
+- **Frontend**: Flutter
+- **State Management**: Provider (or any state management solution you used)
+- **API**: REST API calls to the Django backend
+- **PDF Generation**: Flutter libraries for PDF creation
+- **Internationalization (i18n)**: Multi-language support for 8 languages
+- **Libraries**:
+  - `http` – For API requests
+  - `flutter_localizations` – For multilingual support
+  - `pdf` – For generating PDF invoices
+  - `cloudinary` – For media storage integration
+
+## Setup & Installation
+
+### Prerequisites
+
+- Flutter SDK (version 3.x or higher)
+- Android Studio or VS Code with Flutter plugin installed
+- An emulator or a physical device for testing
+
+### Clone the Repository
+
 ```bash
-mv credo-android-redesign credo_redesign
-```
-#### Navigate to the project directory:
-```bash 
-cd credo_redesign
-```
-#### Install the dependencies:
-```bash 
-flutter pub get
-```
-#### Run the application:
-```bash 
-flutter run
-```
-### Screenshots
-
-<img src="./screenshots/ledger.jpg" alt="Example Image" width="250">&nbsp;&nbsp;&nbsp;
-<img src="./screenshots/accounts.jpg" alt="Example Image" width="250">&nbsp;&nbsp;&nbsp;
-<img src="./screenshots/add_contact.jpg" alt="Example Image" width="250"><br><br>
-
-<img src="./screenshots/settings.jpg" alt="Example Image" width="250">&nbsp;&nbsp;&nbsp;
-<img src="./screenshots/profile.jpg" alt="Example Image" width="250">&nbsp;&nbsp;&nbsp;
-<img src="./screenshots/account.jpg" alt="Example Image" width="250"><br><br>
-
-
-### Conclusion
-This credo clone is a demonstration of how Flutter can be used to create beautiful and functional user interfaces. The code is open source and can be used as a starting point for your own Flutter projects.
+git clone https://github.com/your-username/credo-frontend.git
+cd credo-frontend
