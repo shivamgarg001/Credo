@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "618269514387",
+    "project_id": "pushnotifications-00001",
+    "storage_bucket": "pushnotifications-00001.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618269514387:android:130abcc8873e43a6240b66",
+        "android_client_info": {
+          "package_name": "com.example.credo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1Lu7W_2XQnZRUUl4qjkb5Y9M-Qp_O46w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
