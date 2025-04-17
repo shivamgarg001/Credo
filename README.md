@@ -28,41 +28,17 @@ Credo is a full-stack mobile app built to streamline business operations through
 
 ## 📱 Screenshots
 
-### Ledger Page
+<img src="./screenshots/main_page.png" alt="Ledger Page" width="250">&nbsp;&nbsp;&nbsp;
+<img src="./screenshots/settings_page.png" alt="Settings Page" width="250">&nbsp;&nbsp;&nbsp;
+<img src="./screenshots/profile_page.png" alt="Profile Page" width="250"><br><br>
 
-![Ledger Page](screenshots/main_page.png)
+<img src="./screenshots/language_page.png" alt="Language Page" width="250">&nbsp;&nbsp;&nbsp;
+<img src="./screenshots/add_contact_page.png" alt="Add Contact Page" width="250">&nbsp;&nbsp;&nbsp;
+<img src="./screenshots/ledger_page.png" alt="Transaction Page" width="250"><br><br>
 
-### Settings Page
-
-![Settings Page](screenshots/settings_page.png)
-
-### Profile Page
-
-![Profile Page](screenshots/profile_page.png)
-
-### Language Page
-
-![Language Page](screenshots/language_page.png)
-
-### Add Contact Page
-
-![Add Contact Page](screenshots/add_contact_page.png)
-
-### Transaction Page
-
-![Transaction Page](screenshots/ledger_page.png)
-
-### Ledger Detail Page
-
-![Ledger Detail Page](screenshots/ledger_detail_page.png)
-
-### Add Receipt Page
-
-![Add Receipt Page](screenshots/add_receipt_page.png)
-
-### Chats Page
-
-![Chats Page](screenshots/chats_page.png)
+<img src="./screenshots/ledger_detail_page.png" alt="Ledger Detail Page" width="250">&nbsp;&nbsp;&nbsp;
+<img src="./screenshots/add_receipt_page.png" alt="Add Receipt Page" width="250">&nbsp;&nbsp;&nbsp;
+<img src="./screenshots/chats_page.png" alt="Chats Page" width="250"><br><br>
 
 ---
 
