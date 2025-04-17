@@ -35,5 +35,5 @@ Credo is a full-stack mobile app built to streamline business operations through
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/credo-frontend.git
-cd credo-frontend
+git clone https://github.com/shivamgarg001/Credo-Frontend.git
+cd Credo-Frontend
