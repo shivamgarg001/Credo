@@ -10,6 +10,12 @@ Credo is a full-stack mobile app built to streamline business operations through
 
 > 🔒 **SAFE**: The app installation file is securely hosted on Google Drive.
 
+## 📲 Quick Install via QR
+
+Scan the QR code below to download directly on your mobile device:
+
+![QR Code](https://api.qrserver.com/v1/create-qr-code/?data=https://bit.ly/3G9xCJL&size=150x150)
+
 ## ✨ Features
 
 - **AI-Powered Invoice Extraction**  
