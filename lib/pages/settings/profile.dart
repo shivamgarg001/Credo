@@ -187,7 +187,7 @@ class _ProfilePageState extends State<ProfilePage> {
     
 try {
     final updateResponse = await http.put(
-      Uri.parse('https://credo.up.railway.app/client/v1/updateclient/'),
+      Uri.parse('http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/updateclient/'),
       headers: {
         'Content-Type': 'application/json',
         'Client-ID': clientId,  

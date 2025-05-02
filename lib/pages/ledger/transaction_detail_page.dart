@@ -124,10 +124,10 @@ class _TransactionDetailPageState extends State<TransactionDetailPage> {
   // Fetch more transaction details when "Get More Details" is pressed
   Future<void> _getMoreDetails(String chatId) async {
     final type = widget.type;
-    String apiUrl = 'https://credo.up.railway.app/client/v1/supplier/invoice/get/';
+    String apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/supplier/invoice/get/';
 
     if (type == "customer_credit" || type == "supplier_notif") {
-      apiUrl = 'https://credo.up.railway.app/client/v1/customer/invoice/get/';
+      apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/customer/invoice/get/';
     }
     try {
       Future.delayed(Duration.zero, () {
@@ -178,10 +178,10 @@ class _TransactionDetailPageState extends State<TransactionDetailPage> {
     List<Map<String, dynamic>> chats = [];
 
     final type = widget.type;
-    String apiUrl = 'https://credo.up.railway.app/client/v1/supplier/invoice/get/';
+    String apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/supplier/invoice/get/';
 
     if (type == "customer_credit") {
-      apiUrl = 'https://credo.up.railway.app/client/v1/customer/invoice/get/';
+      apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/customer/invoice/get/';
     }
     try {
       Future.delayed(Duration.zero, () {
@@ -267,9 +267,9 @@ class _TransactionDetailPageState extends State<TransactionDetailPage> {
   // Delete Invoice
   Future<void> _deleteInvoice() async {
     String apiUrl =
-        'https://credo.up.railway.app/client/v1/supplier/invoice/delete/';
+        'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/supplier/invoice/delete/';
     if (widget.type == 'customer_credit') {
-      apiUrl = 'https://credo.up.railway.app/client/v1/customer/invoice/delete/';
+      apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/customer/invoice/delete/';
     }
     try {
       final response = await http.delete(
@@ -304,9 +304,9 @@ class _TransactionDetailPageState extends State<TransactionDetailPage> {
     final rate = double.tryParse(rateController.text) ?? 0.0;
 
     String apiUrl =
-        'https://credo.up.railway.app/client/v1/supplier/invoice/update/';
+        'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/supplier/invoice/update/';
     if (widget.type == 'customer_credit' || widget.type == 'customer_debit') {
-      apiUrl = 'https://credo.up.railway.app/client/v1/customer/invoice/update/';
+      apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/customer/invoice/update/';
     }
     try {
       final response = await http.put(
@@ -355,7 +355,7 @@ class _TransactionDetailPageState extends State<TransactionDetailPage> {
           "created_at": DateTime.now().toString(),
         };
 
-        final String apiUrl = 'https://credo.up.railway.app/client/v1/chat/';
+        final String apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/chat/';
 
         try {
           final response = await http.post(

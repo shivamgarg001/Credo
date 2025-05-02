@@ -106,7 +106,7 @@ class _LoginPageState extends State<LoginPage> {
     try {
       final response = await http.post(
         Uri.parse(
-            'https://credo.up.railway.app/client/v1/login/'), 
+            'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/login/'), 
         headers: {'Content-Type': 'application/json'},
         body: json.encode({
           'phone_number': phoneNumber,
@@ -127,7 +127,7 @@ class _LoginPageState extends State<LoginPage> {
         try {
           final response = await http.get(
             Uri.parse(
-                'https://credo.up.railway.app/client/v1/get_id_from_phone_no/'),
+                'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/get_id_from_phone_no/'),
             headers: {'Phone': phoneNumber},
           );
           print("here");

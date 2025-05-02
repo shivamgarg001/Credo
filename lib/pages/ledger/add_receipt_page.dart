@@ -186,7 +186,7 @@ class _AddReceiptPageState extends State<AddReceiptPage> {
     
     var request = http.MultipartRequest(
       'POST',
-      Uri.parse('https://credo.up.railway.app/biz/v1/upload-image/'),
+      Uri.parse('http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/biz/v1/upload-image/'),
     );
 
     request.headers.addAll({
@@ -252,9 +252,9 @@ class _AddReceiptPageState extends State<AddReceiptPage> {
       'tag':'C',
     });
 
-    String apiUrl = 'https://credo.up.railway.app/client/v1/supplier/invoice/add/';
+    String apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/supplier/invoice/add/';
     if (widget.type == "customer_credit" || widget.type == "customer_debit") {
-      apiUrl = 'https://credo.up.railway.app/client/v1/customer/invoice/add/';
+      apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/customer/invoice/add/';
     }
     final response = await http.post(
       Uri.parse(apiUrl),
@@ -299,7 +299,7 @@ class _AddReceiptPageState extends State<AddReceiptPage> {
 
     var request = http.MultipartRequest(
       'POST',
-      Uri.parse('https://credo.up.railway.app/biz/v1/upload-audio/'), 
+      Uri.parse('http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/biz/v1/upload-audio/'), 
     );
 
     request.headers.addAll({

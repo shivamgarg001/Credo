@@ -147,7 +147,7 @@ class _AddContactPageState extends State<AddContactPage> {
     try {
       // Replace with your actual API endpoint
       final response = await http.get(
-        Uri.parse('https://credo.up.railway.app/client/v1/get_id_from_phone_no/'),
+        Uri.parse('http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/get_id_from_phone_no/'),
         headers: {'Phone': phoneNumber},
       );
 
@@ -173,9 +173,9 @@ class _AddContactPageState extends State<AddContactPage> {
   }
 
   Future<Map<String, dynamic>?> _callSecondApi (int id, String type) async {
-    String apiUrl = 'https://credo.up.railway.app/client/v1/supplier/add/';
+    String apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/supplier/add/';
     if (type == "Customer") {
-      apiUrl = 'https://credo.up.railway.app/client/v1/customer/add/';
+      apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/customer/add/';
     }
 
     try {
