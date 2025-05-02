@@ -6,7 +6,7 @@ Credo is a full-stack mobile app built to streamline business operations through
 
 ## 🧰 Installation
 
-[![Download](https://img.shields.io/badge/Download_from-Google_Drive-blue?logo=google-drive&style=for-the-badge)] [(https://drive.google.com/file/d/13gewowmd2z2HX0WEnkwaSY-ZUFgONb65/view?usp=drive_link))]
+[![Download](https://img.shields.io/badge/Download_from-Google_Drive-blue?logo=google-drive&style=for-the-badge)](https://drive.google.com/file/d/13gewowmd2z2HX0WEnkwaSY-ZUFgONb65/view?usp=drive_link)
 
 > 🔒 **SAFE**: The app installation file is securely hosted on Google Drive.
 
@@ -14,7 +14,7 @@ Credo is a full-stack mobile app built to streamline business operations through
 
 Scan the QR code below to download directly on your mobile device:
 
-![QR Code](https://api.qrserver.com/v1/create-qr-code/?data=https://bit.ly/3G9xCJL&size=150x150)
+![QR Code for Google Drive Link](https://api.qrserver.com/v1/create-qr-code/?data=https://drive.google.com/file/d/13gewowmd2z2HX0WEnkwaSY-ZUFgONb65/view?usp=drive_link&size=150x150)
 
 ## ✨ Features
 
