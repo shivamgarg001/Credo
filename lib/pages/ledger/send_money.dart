@@ -127,9 +127,9 @@ class _SendMoneyState extends State<SendMoney> {
       'tag':'S'
     });
 
-    String apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/customer/invoice/add/';
+    String apiUrl = 'https://credolabs.xyz/client/v1/customer/invoice/add/';
     if (widget.type == "customer_notif") {
-      apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/supplier/invoice/add/';
+      apiUrl = 'https://credolabs.xyz/client/v1/supplier/invoice/add/';
     }
     final response = await http.post(
       Uri.parse(apiUrl),

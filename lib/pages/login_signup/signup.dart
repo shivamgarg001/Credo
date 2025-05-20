@@ -90,7 +90,7 @@ class _SignupPageState extends State<SignupPage> {
     try {
       final response = await http.post(
         Uri.parse(
-            'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/signup/'), // Replace with your signup endpoint
+            'https://credolabs.xyz/client/v1/signup/'), // Replace with your signup endpoint
         headers: {'Content-Type': 'application/json'},
         body: json.encode({
           'client_name': clientName,
@@ -107,7 +107,7 @@ class _SignupPageState extends State<SignupPage> {
         try {
           final response = await http.get(
             Uri.parse(
-                'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/get_id_from_phone_no/'),
+                'https://credolabs.xyz/client/v1/get_id_from_phone_no/'),
             headers: {'Phone': phoneNumber},
           );
 

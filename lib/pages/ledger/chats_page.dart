@@ -123,7 +123,7 @@ class _ChatsPageState extends State<ChatsPage> {
       "created_at": DateTime.now().toString(),
     };
 
-    final String apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/chat/';
+    final String apiUrl = 'https://credolabs.xyz/client/v1/chat/';
 
     try {
       final response = await http.post(
@@ -497,7 +497,7 @@ class _ChatsPageState extends State<ChatsPage> {
       "created_at": DateTime.now().toString(),
     };
 
-    final String apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/chat/';
+    final String apiUrl = 'https://credolabs.xyz/client/v1/chat/';
 
     try {
       final response = await http.post(
@@ -538,9 +538,9 @@ class _ChatsPageState extends State<ChatsPage> {
         });
         // Proceed with the PUT request to approve the message
         String updateApiUrl =
-            'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/supplier/invoice/update/';
+            'https://credolabs.xyz/client/v1/supplier/invoice/update/';
         if (widget.type == 'customer_credit') {
-          updateApiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/customer/invoice/update/';
+          updateApiUrl = 'https://credolabs.xyz/client/v1/customer/invoice/update/';
         }
 
         final putResponse = await http.put(
@@ -673,7 +673,7 @@ class _ChatsPageState extends State<ChatsPage> {
                           "created_at": DateTime.now().toString(),
                         };
 
-                        final String apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/chat/';
+                        final String apiUrl = 'https://credolabs.xyz/client/v1/chat/';
 
                         try {
                           final response = await http.post(

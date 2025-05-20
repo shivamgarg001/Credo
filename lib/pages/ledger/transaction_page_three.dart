@@ -141,8 +141,8 @@ class _LedgerDetailPageState extends State<LedgerDetailPage> {
 
   Future<void> fetchLedgerDetails() async {
     String apiUrl = widget.type.contains('customer')
-        ? 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/customer/ledger/get/'
-        : 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/supplier/ledger/get/';
+        ? 'https://credolabs.xyz/client/v1/customer/ledger/get/'
+        : 'https://credolabs.xyz/client/v1/supplier/ledger/get/';
 
     try {
       final response = await http.get(
@@ -257,8 +257,8 @@ class _LedgerDetailPageState extends State<LedgerDetailPage> {
 
   Future<void> deleteLedger() async {
     String apiUrl = widget.type.contains('customer')
-        ? 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/customer/ledger/delete/'
-        : 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/supplier/ledger/delete/';
+        ? 'https://credolabs.xyz/client/v1/customer/ledger/delete/'
+        : 'https://credolabs.xyz/client/v1/supplier/ledger/delete/';
 
     try {
       final response = await http.delete(
@@ -331,7 +331,7 @@ class _LedgerDetailPageState extends State<LedgerDetailPage> {
     );
 
     // final response = await http.post(
-    //   Uri.parse("http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/biz/v1/generate-invoice/"),
+    //   Uri.parse("https://credolabs.xyz/biz/v1/generate-invoice/"),
     //   headers: {
     //     'Content-Type': 'application/json',
     //     // Add other necessary headers like Authorization if required

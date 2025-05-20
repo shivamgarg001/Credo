@@ -134,15 +134,15 @@ class _TransactionListState extends State<TransactionList> {
   String getApiEndpoint() {
     switch (widget.type) {
       case 'customer_credit':
-        return 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/customer/getall/';
+        return 'https://credolabs.xyz/client/v1/customer/getall/';
       case 'customer_notif':
-        return 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/customer/invoice/auto_getall/';
+        return 'https://credolabs.xyz/client/v1/customer/invoice/auto_getall/';
       case 'supplier_credit':
-        return 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/supplier/getall/';
+        return 'https://credolabs.xyz/client/v1/supplier/getall/';
       case 'supplier_notif':
-        return 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/supplier/invoice/auto_getall/';
+        return 'https://credolabs.xyz/client/v1/supplier/invoice/auto_getall/';
       default:
-        return 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/customer/getall/';
+        return 'https://credolabs.xyz/client/v1/customer/getall/';
     }
   }
 
@@ -335,8 +335,8 @@ class _TransactionListState extends State<TransactionList> {
 
     try {
       String apiUrl = widget.type.contains('customer')
-          ? 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/customer/invoice/auto_get/'
-          : 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/supplier/invoice/auto_get/';
+          ? 'https://credolabs.xyz/client/v1/customer/invoice/auto_get/'
+          : 'https://credolabs.xyz/client/v1/supplier/invoice/auto_get/';
 
       final response = await http.get(
         Uri.parse(apiUrl),

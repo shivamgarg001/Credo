@@ -1,6 +1,6 @@
 // Future<Map<String, dynamic>> fetchImageDetails(dynamic customerId) async {
 //   // Replace this with your actual API call logic
-//   String apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/getclient/';
+//   String apiUrl = 'https://credolabs.xyz/client/v1/getclient/';
 //   print(customerId.runtimeType);
 //   final response = await http.get(
 //     Uri.parse(apiUrl),

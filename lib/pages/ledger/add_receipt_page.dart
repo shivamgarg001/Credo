@@ -186,7 +186,7 @@ class _AddReceiptPageState extends State<AddReceiptPage> {
     
     var request = http.MultipartRequest(
       'POST',
-      Uri.parse('http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/biz/v1/upload-image/'),
+      Uri.parse('https://credolabs.xyz/biz/v1/upload-image/'),
     );
 
     request.headers.addAll({
@@ -252,9 +252,9 @@ class _AddReceiptPageState extends State<AddReceiptPage> {
       'tag':'C',
     });
 
-    String apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/supplier/invoice/add/';
+    String apiUrl = 'https://credolabs.xyz/client/v1/supplier/invoice/add/';
     if (widget.type == "customer_credit" || widget.type == "customer_debit") {
-      apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/customer/invoice/add/';
+      apiUrl = 'https://credolabs.xyz/client/v1/customer/invoice/add/';
     }
     final response = await http.post(
       Uri.parse(apiUrl),
@@ -299,7 +299,7 @@ class _AddReceiptPageState extends State<AddReceiptPage> {
 
     var request = http.MultipartRequest(
       'POST',
-      Uri.parse('http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/biz/v1/upload-audio/'), 
+      Uri.parse('https://credolabs.xyz/biz/v1/upload-audio/'), 
     );
 
     request.headers.addAll({

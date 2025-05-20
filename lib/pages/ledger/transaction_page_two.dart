@@ -136,9 +136,9 @@ class _TransactionDetailPageTwoState extends State<TransactionDetailPageTwo> {
     final customerid = widget.customerid;
     final type = widget.type;
 
-    String apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/supplier/get/';
+    String apiUrl = 'https://credolabs.xyz/client/v1/supplier/get/';
     if (type == "customer_credit" || type == "supplier_notif") {
-      apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/customer/get/';
+      apiUrl = 'https://credolabs.xyz/client/v1/customer/get/';
     }
 
     dynamic response;
@@ -203,7 +203,7 @@ class _TransactionDetailPageTwoState extends State<TransactionDetailPageTwo> {
 
     try {
       final response = await http.get(
-        Uri.parse('http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/getclient/'),
+        Uri.parse('https://credolabs.xyz/client/v1/getclient/'),
         headers: {
           'Client-ID': widget.customerid,
         },
@@ -382,9 +382,9 @@ class _TransactionDetailPageTwoState extends State<TransactionDetailPageTwo> {
       final customerid = widget.customerid;
       final type = widget.type;
 
-      String apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/supplier/delete/';
+      String apiUrl = 'https://credolabs.xyz/client/v1/supplier/delete/';
       if (type == "customer_credit" || type == "customer_debit") {
-        apiUrl = 'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/customer/delete/';
+        apiUrl = 'https://credolabs.xyz/client/v1/customer/delete/';
       }
 
       final response = await http.delete(
@@ -558,10 +558,10 @@ class _TransactionDetailPageTwoState extends State<TransactionDetailPageTwo> {
     if (ledgerName.isNotEmpty) {
       try {
         String apiUrl =
-            'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/supplier/ledger/add/';
+            'https://credolabs.xyz/client/v1/supplier/ledger/add/';
         if (widget.type == "customer_credit" || widget.type == "customer_debit") {
           apiUrl =
-              'http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/customer/ledger/add/';
+              'https://credolabs.xyz/client/v1/customer/ledger/add/';
         }
 
         final response = await http.post(

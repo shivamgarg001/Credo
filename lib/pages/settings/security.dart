@@ -42,7 +42,7 @@ class _SecurityPageState extends State<SecurityPage> {
     final bool confirm = await _showConfirmationDialog(
       context, S.of(context).are_you_sure_delete_account);
     if (confirm) {
-      final response = await http.delete(Uri.parse('http://ec2-65-0-134-141.ap-south-1.compute.amazonaws.com/client/v1/deleteclient/'), headers: {'Client-ID':appState.clientId.toString()});
+      final response = await http.delete(Uri.parse('https://credolabs.xyz/client/v1/deleteclient/'), headers: {'Client-ID':appState.clientId.toString()});
       if (response.statusCode == 200) {
         await appState.clearSharedPreferences(); // Clear all user data
         showSuccessFlushbar(context, S.of(context).sorry_to_see_you_go);
