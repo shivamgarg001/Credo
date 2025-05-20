@@ -558,7 +558,8 @@ class _LedgerDetailPageState extends State<LedgerDetailPage> {
         ),
       )
     : Column(
-        children: groupedTransactions.keys.map((date) {
+        children: [
+          ...groupedTransactions.keys.map((date) {
           
           return Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -667,6 +668,10 @@ class _LedgerDetailPageState extends State<LedgerDetailPage> {
               ],
             );
           }).toList(),
+
+
+          SizedBox(height: 100),
+          ]
         ),
         
                     ],

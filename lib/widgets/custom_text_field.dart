@@ -21,7 +21,7 @@ class CustomTextField extends StatelessWidget {
     this.onChanged,
     this.maxLength,
     this.focusNode,
-    this.margin, String? errorText,
+    this.margin, String? errorText, this.enabled,
   });
 
   final String? label;
@@ -37,6 +37,7 @@ class CustomTextField extends StatelessWidget {
   final int? maxLength;
   final FocusNode? focusNode;
   final EdgeInsetsGeometry? margin;
+  final bool? enabled;
 
   @override
   Widget build(BuildContext context) {
@@ -67,6 +68,7 @@ class CustomTextField extends StatelessWidget {
                 inputFormatters: inputFormat,
                 keyboardType: textInputType,
                 style: kTextFieldStyle,
+                enabled: enabled ?? true,
                 decoration: InputDecoration(
                   counterText: '',
                   prefixIconConstraints:

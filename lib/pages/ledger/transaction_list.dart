@@ -452,6 +452,7 @@ Widget build(BuildContext context) {
                     )
                   : ListView.builder(
                       controller: _scrollController,
+                      padding: const EdgeInsets.only(bottom: 200), 
                       itemCount: filteredTransactions.length,
                       itemBuilder: (context, index) {
                         final transaction = filteredTransactions[index];

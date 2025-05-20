@@ -168,11 +168,12 @@ class _TransactionDetailPageTwoState extends State<TransactionDetailPageTwo> {
         Future.delayed(Duration.zero, () {
           if (mounted) {
             setState(() {
+              print(response.body);
               transactionDetails = json.decode(response.body);
               isLoading = false;
               if (transactionDetails['ledgers'] != null) {
                 transactionDetails['ledgers'].sort((a, b) {
-                  DateTime dateA = DateTime.tryParse(a['updated_at'] ?? '') ??
+                  DateTime dateA = DateTime.tryParse(a['created_at'] ?? '') ??
                       DateTime.now();
                   DateTime dateB = DateTime.tryParse(b['updated_at'] ?? '') ??
                       DateTime.now();
@@ -629,9 +630,7 @@ class _TransactionDetailPageTwoState extends State<TransactionDetailPageTwo> {
                   },
                   tooltip: "Fetch Ledger Details",
                 ),
-          if ((widget.type == "customer_credit" ||
-                  widget.type == "supplier_credit") &&
-              !isLoadingappbar)
+          if ((widget.type == "customer_credit" ||widget.type == "supplier_credit") && !isLoadingappbar)
             IconButton(
               icon: Icon(Icons.add),
               onPressed: () async {
@@ -662,8 +661,8 @@ class _TransactionDetailPageTwoState extends State<TransactionDetailPageTwo> {
                       ),
                     )
                   : ListView.builder(
-                      controller:
-                          _scrollController, // Add scrollController here
+                      controller:_scrollController, // Add scrollController here
+                      padding: const EdgeInsets.only(bottom: 200), 
                       itemCount: transactionDetails['ledgers']?.length ?? 0,
                       itemBuilder: (context, index) {
                         final ledger = transactionDetails['ledgers'][index];
@@ -703,8 +702,8 @@ class _TransactionDetailPageTwoState extends State<TransactionDetailPageTwo> {
                                   backgroundColor: Colors.blue,
                                   child: AutoSizeText('L${index + 1}'),
                                 ),
-                                title: AutoSizeText(ledgerName),
-                                subtitle: AutoSizeText('${S.of(context).amount}: ₹ ${(((ledgerAmount) * 100).round()) / 100}'),
+                                title: (widget.type.contains("notif"))?AutoSizeText("Ledger"):AutoSizeText(ledgerName),
+                                subtitle: (widget.type.contains("notif"))?AutoSizeText(ledgerName):AutoSizeText('${S.of(context).amount}: ₹ ${(((ledgerAmount) * 100).round()) / 100}'),
                                 trailing: Icon(Icons.arrow_forward_ios),
                                 onTap: () {
                                   WidgetsBinding.instance

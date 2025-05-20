@@ -252,6 +252,7 @@ class _ChatsPageState extends State<ChatsPage> {
                 ),
                 ListView.builder(
                   controller: _scrollController,
+                  padding: const EdgeInsets.only(bottom: 200), 
                   itemCount: widget.chats.length,
                   itemBuilder: (context, index) {
                     final chat = widget.chats[index];

@@ -42,14 +42,11 @@ void openWhatsApp(String phoneNumber, String message) async {
 // Function for showing error Flushbar (red color)
 void showErrorFlushbar(BuildContext context, String type) {
   String? phoneNumber;
-  print("kjbzcskjbkwjabcw $type");
-  // Clean string and extract phone number using RegExp
   final phoneMatch = RegExp(r'\{phone:([\d]+)\}').firstMatch(type.trim());
   if (phoneMatch != null && phoneMatch.groupCount >= 1) {
     phoneNumber = phoneMatch.group(1);
     type = type.replaceAll(phoneMatch.group(0)!, '').trim();
   }
-  print("kjbzcskjbkwjabcw $phoneNumber");
   final containsInvite = type.contains("Please Invite");
 
   Flushbar(
@@ -83,7 +80,7 @@ void showErrorFlushbar(BuildContext context, String type) {
             }
 
             final inviteMessage =
-                "Hey! I am using Credo to manage my business transactions easily. You should try it too! Download now: https://credo.app.link/invite";
+                "Hey! I am using Credo to manage my business transactions easily. You should try it too! Download now: https://bit.ly/credolabs";
             final encodedMessage = Uri.encodeComponent(inviteMessage);
             final url = "https://wa.me/$phoneNumber?text=$encodedMessage";
             launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);

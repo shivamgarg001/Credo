@@ -50,12 +50,12 @@ Navigator.pushNamed(context, AddContactPage.id).then((result) {
         ),
         body: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20.0),
+            padding: const EdgeInsets.symmetric(horizontal: 15.0),
             child: Column(
               children: [
-                const SizedBox(height: 15.0),
+                const SizedBox(height: 10.0),
                 const LedgerPageHeader(),
-                const SizedBox(height: 20.0),
+                const SizedBox(height: 10.0),
                 // Pass search query updates from the SearchBox
                 SearchBox(
                   onChanged: (query) {
@@ -69,7 +69,7 @@ Navigator.pushNamed(context, AddContactPage.id).then((result) {
                     
                   },
                 ),
-                const SizedBox(height: 15.0),
+                const SizedBox(height: 7.0),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [

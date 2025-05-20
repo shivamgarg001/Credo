@@ -103,19 +103,22 @@ class _ProfilePageState extends State<ProfilePage> {
                       controller: phoneController,
                       hintText: 'Phone Number',
                       prefixIcon: Icons.phone,
-                      label: 'Phone Number*',
+                      label: 'Phone Number* (Read-only)',
                       textInputType: TextInputType.phone,
                       maxLength: 15,
+                      enabled: false,
                       // enabled: false, // Disable the phone number field
                     ),
+                    
                     CustomTextField(
                       controller: passwordController,
                       hintText: 'Password',
                       prefixIcon: Icons.lock,
-                      label: 'Password*',
+                      label: 'Password* (Read-only)',
                       textInputType: TextInputType.visiblePassword,
                       maxLength: 50,
                       obscureText: true,
+                      enabled: false,
                     ),
                     CustomTextField(
                       controller: addressController,

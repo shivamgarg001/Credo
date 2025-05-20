@@ -999,7 +999,7 @@ return Scaffold(
               ),
             ],
             
-            SizedBox(height: 80), // Space for floating buttons
+            SizedBox(height: 150), // Space for floating buttons
           ],
         ),
       ),

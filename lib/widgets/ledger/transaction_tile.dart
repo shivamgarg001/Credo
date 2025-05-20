@@ -40,7 +40,7 @@ Widget build(BuildContext context) {
             ),
             child: Center(
               child: AutoSizeText(
-                name[0], // Initial of the name
+                name[0].toUpperCase(), // Initial of the name
                 style: const TextStyle(
                   color: Colors.white,
                   fontFamily: 'SF-Pro',
@@ -71,7 +71,7 @@ Widget build(BuildContext context) {
                 AutoSizeText(
                   '₹$amount',
                   style: TextStyle(
-                    color: remarks == S.of(context).advance ? kPrimaryColor : Colors.red,
+                    color: (remarks == S.of(context).advance || amount <= 0) ? kPrimaryColor : Colors.red,
                     fontWeight: FontWeight.bold,
                   ),
                   maxLines: 1,
@@ -117,7 +117,7 @@ Widget build(BuildContext context) {
         ),
         const Divider(
           color: kHighLightColor,
-          height: 5,
+          height: 1,
         )
       ],
     ),
