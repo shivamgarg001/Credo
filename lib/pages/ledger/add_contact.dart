@@ -163,7 +163,8 @@ class _AddContactPageState extends State<AddContactPage> {
         _showErrorMessage("Please enter Phone Number correctly!");
         throw Exception('Please enter Phone Number correctly!');
       } else {
-        _showErrorMessage("This Person is not on our App, Please Invite... 😊");
+        print(phoneNumber);
+        _showErrorMessage("This Person is not on our App, Please Invite... 😊  {phone:91$phoneNumber}");
         throw Exception('This Person is not on our App, Please Invite... 😊');
       }
     } catch (e) {
