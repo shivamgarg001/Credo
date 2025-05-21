@@ -21,7 +21,10 @@ class CustomTextField extends StatelessWidget {
     this.onChanged,
     this.maxLength,
     this.focusNode,
-    this.margin, String? errorText, this.enabled,
+    this.margin, 
+    String? errorText, 
+    this.enabled,
+    this.suffixIcon
   });
 
   final String? label;
@@ -38,6 +41,7 @@ class CustomTextField extends StatelessWidget {
   final FocusNode? focusNode;
   final EdgeInsetsGeometry? margin;
   final bool? enabled;
+  final Widget? suffixIcon; 
 
   @override
   Widget build(BuildContext context) {
@@ -75,7 +79,7 @@ class CustomTextField extends StatelessWidget {
                       const BoxConstraints(minWidth: 40, minHeight: 0),
                   suffixIconConstraints:
                       const BoxConstraints(minWidth: 40, minHeight: 0),
-                  contentPadding: const EdgeInsets.all(0),
+                  contentPadding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 10.0), 
                   fillColor: kPrimaryColor,
                   floatingLabelBehavior: FloatingLabelBehavior.always,
                   hintText: hintText,
@@ -86,6 +90,7 @@ class CustomTextField extends StatelessWidget {
                     prefixIcon,
                     color: kPrimaryColor,
                   ),
+                  suffixIcon: suffixIcon,
                   suffix: suffixOptions,
                 ),
               ),

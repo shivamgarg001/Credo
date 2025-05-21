@@ -24,6 +24,7 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
   bool isLoading = false;
+  bool _isPasswordObscured = true;
 
   @override
   Widget build(BuildContext context) {
@@ -114,11 +115,23 @@ class _ProfilePageState extends State<ProfilePage> {
                       controller: passwordController,
                       hintText: 'Password',
                       prefixIcon: Icons.lock,
-                      label: 'Password* (Read-only)',
+                      label: 'Password*',
                       textInputType: TextInputType.visiblePassword,
                       maxLength: 50,
-                      obscureText: true,
-                      enabled: false,
+                      obscureText: _isPasswordObscured,
+                      suffixIcon: IconButton(
+                        icon: Icon(
+                          _isPasswordObscured ? Icons.visibility_off : Icons.visibility,
+                          color: Colors.grey,
+                        ),
+                        onPressed: () {
+                          setState(() {
+                            _isPasswordObscured = !_isPasswordObscured;
+                          });
+                        },
+                      ),
+
+                      // enabled: false,
                     ),
                     CustomTextField(
                       controller: addressController,

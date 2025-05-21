@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:http/http.dart' as http; 
 import 'dart:convert';
@@ -433,7 +434,14 @@ class _AddReceiptPageState extends State<AddReceiptPage> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return AnnotatedRegion<SystemUiOverlayStyle>(
+    value: SystemUiOverlayStyle(
+      statusBarColor: Colors.white, // Top bar background
+      statusBarIconBrightness: Brightness.dark, // Icon color (dark on white)
+      systemNavigationBarColor: Colors.white, // Bottom nav bar
+      systemNavigationBarIconBrightness: Brightness.dark,
+    ),
+    child: SafeArea(
       child: Scaffold(
         appBar: AppBar(
           title: AutoSizeText(
@@ -639,6 +647,7 @@ class _AddReceiptPageState extends State<AddReceiptPage> {
           ),
         ),
       ),
+    )
     );
   }
 

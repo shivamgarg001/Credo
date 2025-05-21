@@ -104,10 +104,12 @@ void main() async {
   //  FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
 
 
-  // Ensure status bar styling
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-    statusBarColor: Colors.transparent,
-    statusBarIconBrightness: Brightness.dark,
+    statusBarColor: Colors.white, // Top bar
+    statusBarIconBrightness: Brightness.dark, // Icons: dark on white
+
+    systemNavigationBarColor: Colors.white, // Bottom bar
+    systemNavigationBarIconBrightness: Brightness.dark, // Icons: dark on white
   ));
 
   // Initialize and load AppState
