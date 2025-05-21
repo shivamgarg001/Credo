@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:credo/pages/settings/help.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:credo/generated/l10n.dart';
@@ -193,15 +194,23 @@ Widget build(BuildContext context) {
                           minFontSize: 5, // Minimum font size
                         ),
                       ),
-                      // SettingTile(
-                      //   onTap: () => Navigator.pushNamed(
-                      //     context,
-                      //     HelpPage.id,
-                      //   ),
-                      //   icon: Icons.help,
-                      //   title: 'Help',
-                      //   subTitle: 'FAQs, contact us, privacy policy',
-                      // ),
+                      SettingTile(
+                        onTap: () => Navigator.pushNamed(
+                          context,
+                          HelpPage.id,
+                        ),
+                        icon: Icons.help,
+                        title: AutoSizeText(
+                          "Help",
+                          maxLines: 1, // Max of 1 line
+                          minFontSize: 5, // Minimum font size
+                        ),
+                        subTitle: AutoSizeText(
+                          "Privacy Policy, Terms & Conditions",
+                          maxLines: 1, // Max of 1 line
+                          minFontSize: 5, // Minimum font size
+                        ),
+                      ),
                       // SettingTile(
                       //   onTap: () => Navigator.pushNamed(
                       //     context,
