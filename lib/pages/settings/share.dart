@@ -13,7 +13,7 @@ class SharePage extends StatelessWidget {
 
   void _shareInvite(BuildContext context) {
     const String message =
-        "Hey! I am using Credo to manage my business transactions easily. You should try it too! Download now: https://bit.ly/credolabs";
+        "Hey! I am using Credo to manage my business transactions easily. You should try it too! Download now: https://tinyurl.com/credolabs";
     Share.share(message);
   }
 

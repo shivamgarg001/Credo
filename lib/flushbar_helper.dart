@@ -80,7 +80,7 @@ void showErrorFlushbar(BuildContext context, String type) {
             }
 
             final inviteMessage =
-                "Hey! I am using Credo to manage my business transactions easily. You should try it too! Download now: https://bit.ly/credolabs";
+                "Hey! I am using Credo to manage my business transactions easily. You should try it too! Download now: https://tinyurl.com/credolabs";
             final encodedMessage = Uri.encodeComponent(inviteMessage);
             final url = "https://wa.me/$phoneNumber?text=$encodedMessage";
             launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
