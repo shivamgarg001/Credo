@@ -64,7 +64,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '618269514387',
     projectId: 'pushnotifications-00001',
     storageBucket: 'pushnotifications-00001.firebasestorage.app',
-    iosBundleId: 'com.example.redesigncredo',
+    iosBundleId: 'com.credolabs.credo',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
@@ -73,7 +73,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '618269514387',
     projectId: 'pushnotifications-00001',
     storageBucket: 'pushnotifications-00001.firebasestorage.app',
-    iosBundleId: 'com.example.redesigncredo',
+    iosBundleId: 'com.credolabs.credo',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(

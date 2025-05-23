@@ -1,4 +1,4 @@
-package com.example.credo
+package com.credolabs.credo
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -12,7 +12,7 @@ class MainActivity : FlutterActivity() {
 
         // Create the notification channel for Android 8.0 (Oreo) and above
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val channelId = getString(com.example.credo.R.string.default_notification_channel_id) // Get the channel ID from strings.xml
+            val channelId = getString(com.credolabs.credo.R.string.default_notification_channel_id) // Get the channel ID from strings.xml
             val channelName = "Default Notifications" // Name of the notification channel
             val importance = NotificationManager.IMPORTANCE_DEFAULT // Set the importance level
 
