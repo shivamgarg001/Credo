@@ -40,17 +40,15 @@ Scan the QR code below to download directly on your mobile device:
 
 ## 📱 Screenshots
 
-<img src="./screenshots/main_page.png" alt="Ledger Page" width="250">&nbsp;&nbsp;&nbsp;
-<img src="./screenshots/settings_page.png" alt="Settings Page" width="250">&nbsp;&nbsp;&nbsp;
-<img src="./screenshots/profile_page.png" alt="Profile Page" width="250"><br><br>
+<img src="./screenshots/1.png" alt="Ledger Page" width="250">&nbsp;&nbsp;&nbsp;
+<img src="./screenshots/2.png" alt="Chats Page" width="250">&nbsp;&nbsp;&nbsp;
+<img src="./screenshots/3.png" alt="Add Receipt Page" width="250">&nbsp;&nbsp;&nbsp;
+<img src="./screenshots/4.png" alt="Transaction Page" width="250"><br><br>
 
-<img src="./screenshots/language_page.png" alt="Language Page" width="250">&nbsp;&nbsp;&nbsp;
-<img src="./screenshots/add_contact_page.png" alt="Add Contact Page" width="250">&nbsp;&nbsp;&nbsp;
-<img src="./screenshots/ledger_page.png" alt="Transaction Page" width="250"><br><br>
-
-<img src="./screenshots/ledger_detail_page.png" alt="Ledger Detail Page" width="250">&nbsp;&nbsp;&nbsp;
-<img src="./screenshots/add_receipt_page.png" alt="Add Receipt Page" width="250">&nbsp;&nbsp;&nbsp;
-<img src="./screenshots/chats_page.png" alt="Chats Page" width="250"><br><br>
+<img src="./screenshots/5.png" alt="PDF Page" width="250">&nbsp;&nbsp;&nbsp;
+<img src="./screenshots/6.png" alt="Ledger Detail Page" width="250">&nbsp;&nbsp;&nbsp;
+<img src="./screenshots/7.png" alt="Language Page" width="250">&nbsp;&nbsp;&nbsp;
+<img src="./screenshots/8.png" alt="Profile Page" width="250"><br><br>
 
 ---
 
