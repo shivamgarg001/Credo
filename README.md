@@ -40,15 +40,15 @@ Scan the QR code below to download directly on your mobile device:
 
 ## 📱 Screenshots
 
-<img src="./screenshots/1.png" alt="Ledger Page" width="250">&nbsp;&nbsp;&nbsp;
-<img src="./screenshots/2.png" alt="Chats Page" width="250">&nbsp;&nbsp;&nbsp;
-<img src="./screenshots/3.png" alt="Add Receipt Page" width="250">&nbsp;&nbsp;&nbsp;
-<img src="./screenshots/4.png" alt="Transaction Page" width="250"><br><br>
+<img src="./screenshots/1.png" alt="Ledger Page" width="180">&nbsp;&nbsp;&nbsp;
+<img src="./screenshots/2.png" alt="Chats Page" width="180">&nbsp;&nbsp;&nbsp;
+<img src="./screenshots/3.png" alt="Add Receipt Page" width="180">&nbsp;&nbsp;&nbsp;
+<img src="./screenshots/4.png" alt="Transaction Page" width="180"><br><br>
 
-<img src="./screenshots/5.png" alt="PDF Page" width="250">&nbsp;&nbsp;&nbsp;
-<img src="./screenshots/6.png" alt="Ledger Detail Page" width="250">&nbsp;&nbsp;&nbsp;
-<img src="./screenshots/7.png" alt="Language Page" width="250">&nbsp;&nbsp;&nbsp;
-<img src="./screenshots/8.png" alt="Profile Page" width="250"><br><br>
+<img src="./screenshots/5.png" alt="PDF Page" width="180">&nbsp;&nbsp;&nbsp;
+<img src="./screenshots/6.png" alt="Ledger Detail Page" width="180">&nbsp;&nbsp;&nbsp;
+<img src="./screenshots/7.png" alt="Language Page" width="180">&nbsp;&nbsp;&nbsp;
+<img src="./screenshots/8.png" alt="Profile Page" width="180"><br><br>
 
 ---
 
