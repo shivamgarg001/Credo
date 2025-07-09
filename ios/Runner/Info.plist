@@ -5,7 +5,7 @@
 		<key>CFBundleDevelopmentRegion</key>
 		<string>$(DEVELOPMENT_LANGUAGE)</string>
 		<key>CFBundleDisplayName</key>
-		<string>Redesign credo</string>
+		<string>Credo</string>
 		<key>CFBundleExecutable</key>
 		<string>$(EXECUTABLE_NAME)</string>
 		<key>CFBundleIdentifier</key>
@@ -47,27 +47,29 @@
 		<true/>
 		<key>UIApplicationSupportsIndirectInputEvents</key>
 		<true/>
-		<key>NSCameraUsageDescription</key>
-		<string>We need access to your camera to capture photos.</string>
-		<key>NSPhotoLibraryUsageDescription</key>
-		<string>We need access to your photo library to upload photos.</string>
-		<key>LSApplicationQueriesSchemes</key>
-		<key>NSMicrophoneUsageDescription</key>
-		<string>We need access to your audio usage permission to record audio</string>
-		<key>NSFaceIDUsageDescription</key>
-		<string>We need to use Face ID to unlock your account</string>
-		<array>
-			<string>http</string>
-			<string>https</string>
-		</array>
-		<key>UIBackgroundModes</key>
-		<array>
-			<string>fetch</string>
-			<string>remote-notification</string>
-		</array>
-		<key>NSUserTrackingUsageDescription</key>
-		<string>We use tracking for...</string>
-		<key>UIStatusBarHidden</key>
-		<false/>
-	</dict>
+    <key>NSCameraUsageDescription</key>
+    <string>We need access to your camera to capture photos.</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>We need access to your photo library to upload photos.</string>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+      <string>http</string>
+      <string>https</string>
+    </array>
+
+    <key>NSMicrophoneUsageDescription</key>
+    <string>We need access to your audio usage permission to record audio</string>
+    <key>NSFaceIDUsageDescription</key>
+    <string>We need to use Face ID to unlock your account</string>
+
+    <key>UIBackgroundModes</key>
+    <array>
+      <string>fetch</string>
+      <string>remote-notification</string>
+    </array>
+    <key>NSUserTrackingUsageDescription</key>
+    <string>We use tracking for...</string>
+    <key>UIStatusBarHidden</key>
+    <false/>
+  </dict>
 </plist>
